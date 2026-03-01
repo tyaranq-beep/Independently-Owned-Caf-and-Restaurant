@@ -33,7 +33,7 @@ const menuData = [
 
 export default function MenuSection() {
   return (
-    <section id="menu" className="w-full bg-[#0D0C0B] py-32 relative z-10 border-t border-white/5 overflow-hidden">
+    <section id="menu" className="w-full bg-[#0D0C0B] py-32 relative z-10 border-t border-white/5 overflow-hidden scroll-mt-24">
       <div className="max-w-7xl mx-auto pl-6 md:pl-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

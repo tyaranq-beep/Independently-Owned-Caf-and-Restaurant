@@ -6,7 +6,7 @@ import InstagramFeed from './InstagramFeed';
 
 export default function StorySection() {
   return (
-    <section id="story" className="w-full bg-[#0D0C0B] py-32 px-6 md:px-12 relative z-10 border-t border-white/5">
+    <section id="story" className="w-full bg-[#0D0C0B] py-32 px-6 md:px-12 relative z-10 border-t border-white/5 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
 
         {/* Robust Grid Layout instead of error-prone overlapping */}

@@ -26,7 +26,7 @@ const newsData = [
 
 export default function NewsSection() {
     return (
-        <section id="news" className="w-full bg-[#0D0C0B] pt-24 pb-12 px-6 md:px-12 relative z-10 border-t border-white/5">
+        <section id="news" className="w-full bg-[#0D0C0B] pt-24 pb-12 px-6 md:px-12 relative z-10 border-t border-white/5 scroll-mt-24">
             <div className="max-w-4xl mx-auto">
 
                 {/* Header */}

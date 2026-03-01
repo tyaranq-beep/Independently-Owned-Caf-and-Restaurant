@@ -5,7 +5,7 @@ import { MapPin, Clock, Navigation } from 'lucide-react';
 
 export default function InfoSection() {
   return (
-    <section id="status" className="w-full bg-[#0D0C0B] py-32 px-6 md:px-12 relative z-10 border-t border-white/5 overflow-hidden">
+    <section id="status" className="w-full bg-[#0D0C0B] py-32 px-6 md:px-12 relative z-10 border-t border-white/5 overflow-hidden scroll-mt-24">
       <div className="max-w-6xl mx-auto relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
@@ -77,7 +77,7 @@ export default function InfoSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col gap-6 w-full bg-[#0D0C0B]/90 lg:backdrop-blur-md p-6 lg:p-10 border border-white/10 rounded-2xl shadow-2xl relative z-20"
+            className="flex flex-col gap-6 w-full bg-[#0D0C0B]/90 lg:backdrop-blur-md p-6 lg:p-10 border border-white/10 rounded-2xl shadow-2xl relative z-20 scroll-mt-24"
           >
             <div className="flex items-center gap-3 text-[#A68A64]">
               <MapPin size={20} />
