@@ -61,7 +61,7 @@ export default function InstagramFeed() {
 
   return (
     <div className="mt-32">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
@@ -70,20 +70,14 @@ export default function InstagramFeed() {
       >
         <div className="flex items-center gap-3 text-[#A68A64]">
           <Instagram size={24} />
-          <h3 className="font-serif text-xl tracking-widest uppercase">Instagram</h3>
+          <h3 className="font-sans font-medium text-xl tracking-widest uppercase text-[#EAE6DF]">インスタグラム</h3>
         </div>
-        <a href="#" className="text-sm tracking-widest text-[#EAE6DF]/60 hover:text-[#A68A64] transition-colors uppercase">
-          Follow Us
+        <a href="#" className="font-sans text-sm tracking-widest text-[#EAE6DF]/60 hover:text-[#A68A64] transition-colors">
+          フォローする
         </a>
       </motion.div>
 
-      {error && !loading && (
-        <div className="mb-6 text-sm text-[#A68A64] border border-[#A68A64]/30 p-4 rounded-lg bg-[#A68A64]/10">
-          {error} <br/>
-          <span className="text-[#EAE6DF]/60 text-xs">Showing placeholder images. Please set INSTAGRAM_ACCESS_TOKEN in your environment variables.</span>
-        </div>
-      )}
-      
+
       <div className="relative group/carousel">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex -ml-4">
