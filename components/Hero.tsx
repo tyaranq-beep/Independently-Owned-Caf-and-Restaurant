@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative h-[100dvh] w-full overflow-hidden flex items-center justify-center">
+    <section className="relative min-h-[100dvh] w-full overflow-hidden flex flex-col justify-between py-12">
       {/* Background Image with slow zoom animation */}
       <motion.div
         initial={{ scale: 1.05 }}
@@ -25,17 +25,20 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#0D0C0B]/60 via-[#0D0C0B]/40 to-[#0D0C0B]/90" />
       </motion.div>
 
+      {/* Spacer to push content to middle safely */}
+      <div className="flex-1"></div>
+
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto mt-20">
+      <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto w-full">
         <motion.p
           initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="font-serif text-[#A68A64] tracking-[0.3em] text-sm md:text-base mb-6 uppercase"
+          className="font-serif text-[#A68A64] tracking-[0.3em] text-sm md:text-base mb-6"
         >
-          Cafe Kotonoha
+          自家焙煎珈琲 カフェ・コトノハ
         </motion.p>
-        
+
         <motion.h1
           initial={{ opacity: 0, y: 30, filter: 'blur(15px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
@@ -57,15 +60,18 @@ export default function Hero() {
           <br className="hidden md:block" />
           あなただけの特別な居場所がここにあります。
         </motion.p>
+      </div>
 
+      {/* Spacer to push indicator to bottom without absolute overlap */}
+      <div className="flex-1 flex flex-col justify-end items-center relative z-10 pt-12">
         {/* Scroll Indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+          className="flex flex-col items-center gap-2"
         >
-          <span className="text-[10px] tracking-[0.2em] text-[#EAE6DF]/50 uppercase">Scroll</span>
+          <span className="text-[10px] tracking-[0.2em] text-[#EAE6DF]/50 font-sans">スクロール</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}

@@ -8,19 +8,19 @@ const newsData = [
         date: "2024.05.20",
         category: "NEW MENU",
         title: "【完熟メロンと自家製カスタードの贅沢パフェ】提供開始のおしらせ",
-        link: "#"
+        link: "#news"
     },
     {
         date: "2024.05.15",
         category: "INFO",
         title: "来月の営業日と貸切イベントに伴う営業時間変更について",
-        link: "#"
+        link: "#news"
     },
     {
         date: "2024.05.01",
         category: "BLOG",
         title: "今月のシングルオリジン：エチオピア・イルガチェフェの焙煎記録",
-        link: "#"
+        link: "#news"
     }
 ];
 
@@ -61,7 +61,6 @@ export default function NewsSection() {
                         >
                             <a
                                 href={news.link}
-                                onClick={(e) => e.preventDefault()}
                                 className="group flex flex-col md:flex-row md:items-center p-6 border-b border-white/10 hover:bg-white/5 transition-colors relative"
                             >
                                 <div className="flex items-center gap-4 mb-3 md:mb-0 md:w-48 shrink-0 pb-1 md:pb-0 font-sans">
@@ -87,7 +86,7 @@ export default function NewsSection() {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="mt-8 flex justify-end"
                 >
-                    <a href="#" className="font-sans text-sm text-[#EAE6DF]/60 tracking-widest hover:text-[#A68A64] transition-colors border-b border-transparent hover:border-[#A68A64] pb-1">
+                    <a href="#news" className="font-sans text-sm text-[#EAE6DF]/60 tracking-widest hover:text-[#A68A64] transition-colors border-b border-transparent hover:border-[#A68A64] pb-1">
                         VIEW ALL
                     </a>
                 </motion.div>
