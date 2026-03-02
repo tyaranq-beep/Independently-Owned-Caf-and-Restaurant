@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-sans bg-[#0D0C0B] text-[#EAE6DF] antialiased selection:bg-[#A68A64] selection:text-[#0D0C0B]">
         <DemoBanner />
         {children}
-        <StickyBookingBar industry="飲食店・カフェ" />
+        <StickyBookingBar />
       </body>
     </html>
   );
