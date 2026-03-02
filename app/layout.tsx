@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Noto_Serif_JP, M_PLUS_Rounded_1c } from 'next/font/google';
-import './globals.css'; // Global styles
+import './globals.css';
 import StickyBookingBar from '@/components/StickyBookingBar';
 import DemoBanner from '@/components/DemoBanner';
 
@@ -19,8 +19,11 @@ const mPlusRounded = M_PLUS_Rounded_1c({
 });
 
 export const metadata: Metadata = {
-  title: 'Cafe Kotonoha | カフェ・コトノハ',
-  description: '最高の一杯と居心地の良い空間を提供する、デジタル上の「完璧なエントランス」。',
+  title: '〇〇カフェ | 地元で愛される手作りランチと自家焙煎珈琲',
+  description: '地元の新鮮な野菜を使った日替わりランチと、店内で丁寧に焙煎したコーヒー。木の温もりあふれる店内で、心ほぐれるひとときをお過ごしください。',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -29,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-sans bg-[#0D0C0B] text-[#EAE6DF] antialiased selection:bg-[#A68A64] selection:text-[#0D0C0B]">
         <DemoBanner />
         {children}
-        <StickyBookingBar />
+        <StickyBookingBar industry="飲食店・カフェ" />
       </body>
     </html>
   );
