@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   description: '地元の新鮮な野菜を使った日替わりランチと、店内で丁寧に焙煎したコーヒー。木の温もりあふれる店内で、心ほぐれるひとときをお過ごしください。',
   icons: {
     icon: [
-      { url: '/favicon.ico?v=6' },
-      { url: '/favicon-32.png?v=6', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon_fixed.ico?v=7' },
+      { url: '/favicon-32_fixed.png?v=7', sizes: '32x32', type: 'image/png' },
     ],
     apple: [
-      { url: '/favicon-192.png?v=6', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon-192_fixed.png?v=7', sizes: '192x192', type: 'image/png' },
     ],
   },
 };
