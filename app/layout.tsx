@@ -21,7 +21,9 @@ const mPlusRounded = M_PLUS_Rounded_1c({
 export const metadata: Metadata = {
   title: '〇〇カフェ | 地元で愛される手作りランチと自家焙煎珈琲',
   description: '地元の新鮮な野菜を使った日替わりランチと、店内で丁寧に焙煎したコーヒー。木の温もりあふれる店内で、心ほぐれるひとときをお過ごしください。',
-},
+  icons: {
+    icon: '/favicon.ico?v=5',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
