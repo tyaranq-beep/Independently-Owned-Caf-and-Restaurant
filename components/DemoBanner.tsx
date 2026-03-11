@@ -33,9 +33,8 @@ export default function DemoBanner() {
                     className="fixed top-0 left-0 right-0 z-[60] py-3 px-6 bg-[#A68A64] text-white flex items-center justify-center shadow-lg"
                 >
                     <div className="flex items-center gap-3 w-full max-w-7xl mx-auto relative justify-center">
-                        <Info size={18} className="hidden sm:block" />
                         <p className="text-sm md:text-base font-medium font-sans tracking-wide text-center">
-                            ※こちらは個人経営カフェ・飲食店向けのデモサイトです。実際の予約などは行えません。
+                            デモサイトについて：このサイトはデモ用のサンプルです。デザイン・カラーはお客様のブランドに合わせてカスタマイズします。 掲載中の画像はすべてイメージ素材であり、実際のサービスではお客様ご提供の写真に差し替えます。
                         </p>
                         <button
                             onClick={handleClose}
