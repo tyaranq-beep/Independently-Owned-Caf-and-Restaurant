@@ -34,7 +34,7 @@ export default function DemoBanner() {
                 >
                     <div className="flex items-center gap-3 w-full max-w-7xl mx-auto relative justify-center">
                         <p className="text-sm md:text-base font-medium font-sans tracking-wide text-center">
-                            デモサイトについて：このサイトはデモ用のサンプルです。デザイン・カラーはお客様のブランドに合わせてカスタマイズします。 掲載中の画像はすべてイメージ素材であり、実際のサービスではお客様ご提供の写真に差し替えます。
+                            デモサイトについて：このサイトはデモ用のサンプルです。デザイン・イメージカラーはお客様のブランドに合わせてカスタマイズします。 掲載中の画像はすべてイメージ素材であり、実際のサービスではお客様ご提供の写真に差し替えます。
                         </p>
                         <button
                             onClick={handleClose}
