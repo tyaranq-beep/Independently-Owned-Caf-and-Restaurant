@@ -68,22 +68,29 @@ export default function MenuSection() {
               {/* Swipeable Container */}
               <div className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar gap-6 pr-6 md:pr-12 pb-8 pt-2">
                 {section.items.map((item, itemIdx) => (
-                  <div key={itemIdx} className="flex-none w-[280px] md:w-[320px] snap-center group">
-                    <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-white/5 shadow-xl">
+                  <motion.div
+                    key={itemIdx}
+                    className="flex-none w-[280px] md:w-[320px] snap-center group cursor-pointer"
+                    whileHover={{ y: -8 }}
+                    transition={{ type: 'spring', stiffness: 280, damping: 22 }}
+                  >
+                    <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-white/5 shadow-xl border border-white/10 group-hover:border-[#A68A64]/50 transition-colors duration-300">
                       <Image
                         src={item.image}
                         alt={item.name}
                         fill
-                        className="object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+                        className="object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.08]"
                         referrerPolicy="no-referrer"
                       />
+                      {/* ホバー時のゴールドグロー */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#A68A64]/0 group-hover:from-[#A68A64]/15 to-transparent transition-all duration-700" />
                     </div>
                     <div className="flex justify-between items-start gap-4 mb-3">
                       <h4 className="text-[#EAE6DF] font-sans font-medium tracking-wide text-lg">{item.name}</h4>
                       <span className="text-[#A68A64] font-serif tracking-wider whitespace-nowrap pt-1">{item.price}</span>
                     </div>
                     <p className="text-[#EAE6DF]/60 text-sm font-light tracking-wide leading-relaxed">{item.desc}</p>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>
